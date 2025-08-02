@@ -1,0 +1,46 @@
+.contact {
+    width: 100%;
+    height: auto;
+    display: grid;
+    place-content: center;
+}
+form {
+    width: auto;
+    padding: 20px;
+    margin: 10px;
+    border: 2px inset;
+    border-radius: 8px;
+    background-color: var(--secondary-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#label-text {
+    font-size: 18px;
+    color: var(--text-secondary);
+    padding: 10px;
+}
+form #name, #email {
+    width: 450px;
+    height: 35px;
+    border: 2px inset;
+}
+#message {
+    width: 550px;
+    height: 300px;
+    padding: 10px;
+    border: 2px inset;
+
+}
+
+.contact button {
+    place-content: center;
+    width: 40%;
+    height: 45px;
+    margin: 30px;
+    border: 2px inset;
+    border-radius: 25px;
+    font-size: 18px;
+    color: var(--text-secondary);
+    background-color: var(--text-accent);
+}

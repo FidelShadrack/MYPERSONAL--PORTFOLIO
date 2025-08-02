@@ -3,10 +3,10 @@
 :root {
     --primary-bg: #ffffff;
     --secondary-bg: #f0f4f8;
-    --bg-accent: #d1e7dd;
-    --text-primary1: #34495e;
-    --text-primary2: #2c3e50;
-    --text-secondary: #4a90e2;
+    --accent-bg: #d1e7dd;
+    --text-primary: #34495e;
+    --text-secondary: #2c3e50;
+    --text-accent: #4a90e2;
 }
 html {
     scroll-behavior: smooth;
@@ -40,7 +40,7 @@ body {
 
 ul li a{
     text-decoration: none;
-    color: var(--text-primary2);
+    color: var(--text-accent);
     text-align: center;
     font-size: 18px;
 }

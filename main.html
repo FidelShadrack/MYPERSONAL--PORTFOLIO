@@ -6,6 +6,13 @@
         <title>Personal Portfolio</title>
         <link rel="stylesheet" href="./css files/header.css">
         <link rel="stylesheet" href="./css files/home.css">
+        <link rel="stylesheet" href="./css files/skills.css">
+        <link rel="stylesheet" href="./css files/projects.css">
+        <link rel="stylesheet" href="./css files/about.css">
+        <link rel="stylesheet" href="./css files/contact.css">
+        <link rel="stylesheet" href="./css files/intrests.css">
+        <link rel="stylesheet" href="./css files/education.css">
+        <link rel="stylesheet" href="./css files/footer.css">
 
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
@@ -56,36 +63,47 @@
             </div>
         </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
+        <section class="skills">
+            <h2 id="title">Skills</h2>
             <ul>
-                <li>[Skill 1]</li>
-                <li>[Skill 2]</li>
-                <li>[Skill 3]</li>
+                <li id="skill">[Skill 1]</li>
+                <li id="skill">[Skill 2]</li>
+                <li id="skill">[Skill 3]</li>
             </ul>
         </section>
 
-        <section id="about">
-            <h2>About Me</h2>
+        <section class="about">
+            <h2 id="title">About Me</h2>
             <p>[Your brief introduction, background, and goals]</p>
         </section>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="project">
+        <h2 id="title">Projects</h2>
+        <section class="projects">
+
+            <div id="project">
                 <h3>Project 1</h3>
                 <p>[Description of Project 1]</p>
                 <a href="#">View Project</a>
             </div>
-            <div class="project">
+            <div id="project">
                 <h3>Project 2</h3>
                 <p>[Description of Project 2]</p>
+                <a href="#">View Project</a>
+            </div>
+            <div id="project">
+                <h3>Project 3</h3>
+                <p>[Description of Project 3]</p>
+                <a href="#">View Project</a>
+            </div>
+            <div id="project">
+                <h3>Project 4</h3>
+                <p>[Description of Project 4]</p>
                 <a href="#">View Project</a>
             </div>
         </section>
 
         <section id="education">
-            <h2>Educational Background</h2>
+            <h2 id="title">Educational Background</h2>
             <ul>
                 <li>
                     <h3>[Degree, e.g., Bachelor of Science in Computer Science]</h3>
@@ -99,20 +117,20 @@
         </section>
 
         <section id="interests">
-            <h2>Interests</h2>
+            <h2 id="title">Interests</h2>
             <p>[Your hobbies or interests]</p>
         </section>
 
-        <section id="contact">
-            <h2>Contact Me</h2>
+        <h2 id="title">Contact Me</h2>
+        <section class="contact">
             <form>
-                <label for="name">Name:</label>
+                <label for="name" id="label-text">Name:</label>
                 <input type="text" id="name" name="name" required>
                 
-                <label for="email">Email:</label>
+                <label for="email" id="label-text">Email:</label>
                 <input type="email" id="email" name="email" required>
                 
-                <label for="message">Message:</label>
+                <label for="message" id="label-text">Message:</label>
                 <textarea id="message" name="message" required></textarea>
                 
                 <button type="submit">Send</button>
@@ -120,12 +138,38 @@
         </section>
 
         <footer>
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Email</a>
+            <h2 id="title">Fidel Shadrack</h2>
+
+            <div class="icons">
+                    <a href="">
+                        <i class='bx bxl-github bx-lg'></i>
+                    </a>
+                    <a href="">
+                        <i class='bx bxl-linkedin-square bx-lg' ></i>
+                    </a>
+                    <a href="">
+                        <i class='bx bxl-stack-overflow bx-lg' ></i>
+                    </a>
+                    <a href="">
+                        <i class='bx bxl-twitter bx-lg'></i> 
+                    </a>
+                    <a href="">
+                        <i class='bx bxl-whatsapp bx-lg' ></i> 
+                    </a>
+                </div>
+
+            <div class="navigation">
+                <ul> 
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#interests">Interests</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
+
+            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
         </footer>
     </body>
 </html>

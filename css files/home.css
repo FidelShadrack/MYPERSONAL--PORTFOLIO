@@ -1,0 +1,11 @@
+@import url(main.css);
+
+.home {
+    margin-top: 65px;
+    padding: 8px;
+    background-color: var(--primary-bg);
+    width: 100%;
+}
+.home #left-side {
+    background-color: antiquewhite;
+}

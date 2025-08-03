@@ -15,3 +15,16 @@
 .hobbie ul li {
     color: var(--text-primary);
 }
+
+
+@media (max-width: 768px) {
+    .interests {
+        flex-direction: column;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .hobbie {
+        width: 100%;
+    }
+}

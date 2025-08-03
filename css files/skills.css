@@ -25,3 +25,16 @@
     border-radius: 10px;
     box-shadow: 5px 5px 5px 4px var(--accent-bg);
 }
+
+
+@media (max-width: 768px) {
+    .skills {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    #skill {
+        padding: 15px;
+    }
+}

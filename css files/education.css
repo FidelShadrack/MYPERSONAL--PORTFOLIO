@@ -1,0 +1,12 @@
+
+
+
+@media (max-width: 768px) {
+    #education {
+        padding: 20px;
+    }
+
+    #education ul {
+        padding-left: 20px;
+    }
+}

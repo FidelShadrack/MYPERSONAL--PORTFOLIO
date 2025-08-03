@@ -25,3 +25,16 @@
     color: var(--accent-blue);
     font-size: 20px;
 }
+
+@media (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .project-tile img {
+        width: 100%;
+        height: auto;
+    }
+}

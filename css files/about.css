@@ -1,4 +1,8 @@
-
+.about {
+    width: 100%;
+    padding: 45px;
+    background-color: var(--secondary-bg);
+}
 
 
 @media (max-width: 768px) {

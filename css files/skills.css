@@ -21,6 +21,8 @@
     width: 70%;
     height: 150px;
     margin: 18px;
+    text-align: center;
+    color: var(--text-primary);
     background-color: var(--secondary-bg);
     border-radius: 10px;
     box-shadow: 5px 5px 5px 4px var(--accent-bg);

@@ -24,12 +24,7 @@
     <body>
         <header>
             <nav class="navbar">
-                <div class="humburger" onclick="toggleMenu()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul> 
+                <ul id="def"> 
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -38,6 +33,20 @@
                     <li><a href="#interests">Interests</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+
+                <div class="menu-icon">
+                    <i class='bx bx-menu bx-lg'></i>
+
+                    <ul id="dropdown">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#interests">Interests</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
             </nav>
         </header>
 
@@ -91,9 +100,9 @@
             </div>
         </section>
 
+        <h2 id="title">About Me</h2>
         <section class="about">
-            <h2 id="title">About Me</h2>
-            <p>[Your brief introduction, background, and goals]</p>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti qui pariatur debitis enim, mollitia eos optio incidunt esse quibusdam aperiam, ex illum et nostrum laborum molestiae vero deleniti quos sapiente.</p>
         </section>
 
         <h2 id="title">Projects</h2>
@@ -147,18 +156,24 @@
             </a>
         </section>
 
-        <section id="education">
-            <h2 id="title">Educational Background</h2>
-            <ul>
-                <li>
-                    <h3>Bachelor of Science in Electrical Engineering</h3>
-                    <p>Multimedia University of Kenya</p>
-                </li>
-                <li>
-                    <h3>High Chool Studies</h3>
-                    <p>[Institution Name, Year]</p>
-                </li>
-            </ul>
+        <h2 id="title">Educational Background</h2>
+        <section class="education">
+            <div class="school">
+                <h3>Multimedia University of Kenya</h3>
+                <h4>Bachelor Of Science in Electrical and Telecomminication Engineering</h4>
+            </div>
+            <div class="school">
+                <h3>Orero Boys High School</h3>
+                <h4>High School Studies</h4>
+            </div>
+            <div class="school">
+                <h3>Adu Blossom Education Center</h3>
+                <h4>Primary School Studies</h4>
+            </div>
+            <div class="school">
+                <h3>Adu Blossom Education Center</h3>
+                <h4>Lower Education Level</h4>
+            </div>
         </section>
 
         <!-- hobbies section -->
@@ -266,7 +281,6 @@
 
             <p>&copy; 2025 FidelShadrackPersonalPortfolio. All rights reserved.</p>
         </footer>
-
 
 
         <script src="./scripts/main.js"></script>

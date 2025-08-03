@@ -1,5 +1,26 @@
+.education {
+    width: 100%;
+    margin: 45px;
+    display: grid;
+    place-items: center;
+}
+.school {
+    background-color: var(--secondary-bg);
+    width: 70%;
+    height: 100px;
+    margin: 10px;
+    box-shadow: 5px 5px 4px var(--accent-bg);
+    border-radius: 10px;
+    text-align: center;
+}
 
-
+.school h3 {
+    color: var(--text-primary);
+    font-size: 25px;
+}
+.school h2 {
+    color: var(--text-secondary);
+}
 
 @media (max-width: 768px) {
     #education {

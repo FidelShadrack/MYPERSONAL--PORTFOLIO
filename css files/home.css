@@ -4,17 +4,19 @@
     margin-top: 65px;
     background-image: linear-gradient(135deg, var(--secondary-bg), var(--primary-bg));
     width: 100%;
+    height: auto;
     padding: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 #home-left {
     width: 50%;
-    display: grid;
-    place-content: center;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
 #home-left h5 {
     font-size: 14px;
@@ -36,14 +38,71 @@
 }
 #home-left .icons {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    width: 70%;
+    width: 60%;
     margin-top: 50px;
     padding: 10px;
+}
+.icons .bxl-github {
+    color: var(--github);
+}
+.icons .bxl-linkedin-square {
+    color: var(--linkedin);
+}
+.icons .bxl-stack-overflow {
+    color: var(--stack);
+}
+.icons .bxl-twitter {
+    color: var(--twitter);
+}
+.icons .bxl-whatsapp {
+    color: var(--whatsapp);
+}
+.icons .bxl-facebook-square {
+    color: var(--facebook);
+}
+.icons .bxl-instagram-alt {
+    background: var(--instagram);
+    border-radius: 5px;
+}
+.icons .bxl-discord-alt {
+    color: var(--discord);
+}
+
+.icons a {
+    text-decoration: none;
+    display: grid;
+    place-content: center;
+    width: 58px;
+    height: 58px;
+    background-color: var(--accent-bg);
+    border: 0.5px inset var(--accent-bg);
+    border-radius: 4px;
 }
 
 #home-right {
     display: grid;
     place-content: center;
     width: 50%;
+}
+#home-right img {
+    border: 0.5px solid var(--accent-bg);
+    box-shadow: 6px 6px 8px 5px var(--text-accent);
+}
+
+
+@media screen and (max-width: 720px) {
+    .home {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    #home-left {
+        width: 100%;
+    }
+    #home-left img {
+        width: 100%;
+        height: auto;
+    }
 }

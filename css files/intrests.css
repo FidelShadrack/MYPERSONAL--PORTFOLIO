@@ -1,0 +1,17 @@
+.interests {
+    width: 100%;
+    height: auto;
+    background-color: var(--secondary-bg);
+}
+.hobbie {
+    margin: 15px 10px 10px 45px;
+}
+.hobbie h3 {
+    color: var(--text-accent);
+}
+.hobbie ul {
+    list-style-type: circle;
+}
+.hobbie ul li {
+    color: var(--text-primary);
+}

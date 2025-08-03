@@ -7,10 +7,25 @@
     --text-primary: #34495e;
     --text-secondary: #2c3e50;
     --text-accent: #4a90e2;
+
+    --github: #24292E;
+    --linkedin: #0A66C2;
+    --stack: #F48024;
+    --twitter: #1DA1F2;
+    --whatsapp: #25D366;
+    --facebook: #1877F2;
+    --instagram: radial-gradient(
+    circle at 30% 107%,
+    #FDF497 0%,
+    #FD5949 45%,
+    #D6249F 60%,
+    #285AEB 90%
+  );
+    --discord: #5865F2;
 }
 html {
     scroll-behavior: smooth;
-    font-family: 'Roboto', 'serif';
+    font-family: "Roboto Slab", serif;
 }
 body {
     background-color: var(--primary-bg);
@@ -29,92 +44,29 @@ body {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: flex-end;
     align-items: center;
 }
 .navbar ul li {
-    width: 50px;
-    min-width: 50px;
+    width: auto;
+    margin: 0 10px 0 25px;
 }
 
 
 ul li a{
     text-decoration: none;
-    color: var(--text-accent);
+    color: var(--text-primary);
     text-align: center;
     font-size: 18px;
+    padding: 5px;
+}
+.navbar a:hover {
+    color: var(--text-accent);
 }
 
-
-@media only screen and (max-width: 720px) {
-    header nav ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-
-    section {
-        padding: 20px;
-    }
-
-    #home h1 {
-        font-size: 1.8em;
-        text-align: center;
-    }
-
-    #home p {
-        font-size: 1em;
-        text-align: center;
-    }
-
-    #projects .project {
-        margin-bottom: 20px;
-    }
-
-    #education ul li {
-        margin-bottom: 15px;
-    }
-
-    #skills ul {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    #skills ul li {
-        margin: 5px;
-    }
-
-    #contact form {
-        display: flex;
-        flex-direction: column;
-    }
-
-    #contact input,
-    #contact textarea {
-        margin-bottom: 10px;
-        padding: 8px;
-        font-size: 1em;
-    }
-
-    #contact button {
-        padding: 10px;
-        font-size: 1em;
-    }
-
-    footer {
-        text-align: center;
-        padding: 20px;
-    }
-
-    footer .social-links {
-        display: flex;
-        justify-content: center;
-        gap: 15px;
+@media (max-width: 720px) {
+    .navbar ul li a {
+        color: #25D366;
     }
 }

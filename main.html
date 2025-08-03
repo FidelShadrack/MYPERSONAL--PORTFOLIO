@@ -14,11 +14,20 @@
         <link rel="stylesheet" href="./css files/education.css">
         <link rel="stylesheet" href="./css files/footer.css">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     </head>
     <body>
         <header>
             <nav class="navbar">
+                <div class="humburger" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 <ul> 
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -33,11 +42,12 @@
 
         <section class="home">
             <div id="home-left">
-                <h5>Welcome to My Personal Portfolio</h5>
-                <h1>I'm Fidel Shadrack</h1>
-                <h3>An Electrical and Telecommunication Engineer</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita, ea repudiandae inventore nobis reprehenderit voluptatibus aut atque aliquid suscipit totam quod vero, nesciunt culpa doloremque maxime incidunt! Incidunt, corporis.</p>
-
+                <article>
+                    <h5>Welcome to My Personal Portfolio</h5>
+                    <h1>I'm Fidel Shadrack</h1>
+                    <h3>An Electrical and Telecommunication Engineer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus expedita, ea repudiandae inventore nobis reprehenderit voluptatibus aut atque aliquid suscipit totam quod vero, nesciunt culpa doloremque maxime incidunt! Incidunt, corporis.</p>
+                </article>
                 <div class="icons">
                     <a href="">
                         <i class='bx bxl-github bx-lg'></i>
@@ -63,13 +73,21 @@
             </div>
         </section>
 
+
+        <h2 id="title">Skills</h2>
         <section class="skills">
-            <h2 id="title">Skills</h2>
-            <ul>
-                <li id="skill">[Skill 1]</li>
-                <li id="skill">[Skill 2]</li>
-                <li id="skill">[Skill 3]</li>
-            </ul>
+            <div id="skill">
+                <h3>Microsoft Office Applications</h3>
+            </div>
+            <div id="skill">
+                <h3>Computer Aided Design (Auto-CAD)</h3>
+            </div>
+            <div id="skill">
+                <h3>Digital Marketing</h3>
+            </div>
+            <div id="skill">
+                <h3>Programming Languages</h3>
+            </div>
         </section>
 
         <section class="about">
@@ -79,48 +97,114 @@
 
         <h2 id="title">Projects</h2>
         <section class="projects">
+            <a href="#" class="project-tile">
+                <img src="../pictures/project1.jpg" alt="Project 1 Preview">
+                <h5>Basic Calculator</h5>
+                <p>Brief description of Project 1.</p>
+            </a>
 
-            <div id="project">
-                <h3>Project 1</h3>
-                <p>[Description of Project 1]</p>
-                <a href="#">View Project</a>
-            </div>
-            <div id="project">
-                <h3>Project 2</h3>
-                <p>[Description of Project 2]</p>
-                <a href="#">View Project</a>
-            </div>
-            <div id="project">
-                <h3>Project 3</h3>
-                <p>[Description of Project 3]</p>
-                <a href="#">View Project</a>
-            </div>
-            <div id="project">
-                <h3>Project 4</h3>
-                <p>[Description of Project 4]</p>
-                <a href="#">View Project</a>
-            </div>
+            <a href="#" class="project-tile">
+                <img src="../pictures/project2.jpg" alt="Project 2 Preview">
+                <h5>Wheather App</h5>
+                <p>Brief description of Project 2.</p>
+            </a>
+
+            <a href="#" class="project-tile">
+                <img src="../pictures/project3.jpg" alt="Project 3 Preview">
+                <h5>Dice Roller</h5>
+                <p>Brief description of Project 3.</p>
+            </a>
+
+            <a href="#" class="project-tile">
+                <img src="../pictures/project4.jpg" alt="Project 4 Preview">
+                <h5>Quiz App</h5>
+                <p>Brief description of Project 4.</p>
+            </a>
+
+            <a href="#" class="project-tile">
+                <img src="../pictures/project5.jpg" alt="Project 5 Preview">
+                <h5>To-do-list App</h5>
+                <p>Brief description of Project 5.</p>
+            </a>
+
+            <a href="#" class="project-tile">
+                <img src="../pictures/project6.jpg" alt="Project 6 Preview">
+                <h5>Expense Tracker</h5>
+                <p>Brief description of Project 6.</p>
+            </a>
+
+            <a href="#" class="project-tile">
+                <img src="../pictures/project7.jpg" alt="Project 6 Preview">
+                <h5>Riddle App</h5>
+                <p>Brief description of Project 7.</p>
+            </a>
+
+            <a href="#" class="project-tile">
+                <img src="../pictures/project8.jpg" alt="Project 6 Preview">
+                <h5>Fitness Tracker</h5>
+                <p>Brief description of Project 8.</p>
+            </a>
         </section>
 
         <section id="education">
             <h2 id="title">Educational Background</h2>
             <ul>
                 <li>
-                    <h3>[Degree, e.g., Bachelor of Science in Computer Science]</h3>
-                    <p>[University Name, Year]</p>
+                    <h3>Bachelor of Science in Electrical Engineering</h3>
+                    <p>Multimedia University of Kenya</p>
                 </li>
                 <li>
-                    <h3>[Other Qualification]</h3>
+                    <h3>High Chool Studies</h3>
                     <p>[Institution Name, Year]</p>
                 </li>
             </ul>
         </section>
 
-        <section id="interests">
-            <h2 id="title">Interests</h2>
-            <p>[Your hobbies or interests]</p>
+        <!-- hobbies section -->
+         <h2 id="title">Interests</h2>
+        <section class="interests">
+
+            <div class="hobbie">
+                <h3>Creative & Artistic</h3>
+                <ul>
+                    <li>Visual Arts</li>
+                    <li>Writing</li>
+                    <li>crafts</li>
+                    <li>Music and Performance</li>
+                    <li>Culinary</li>
+                </ul>
+            </div>
+            <div class="hobbie">
+                <h3>Interlectual & Educational</h3>
+                <ul>
+                    <li>Jornals</li>
+                    <li>Documentaries</li>
+                    <li>Urban Exploration</li>
+                    <li>Technology</li>
+                    <li>Games and Puzzles</li>
+                </ul>
+            </div>
+            <div class="hobbie">
+                <h3>Physical & Active</h3>
+                <ul>
+                    <li>Martial Arts</li>
+                    <li>Gymnastics</li>
+                    <li>Soccer</li>
+                    <li>Basketball</li>
+                    <li>Travel</li>
+                </ul>
+            </div>
+            <div class="hobbie">
+                <h3>Community & Social</h3>
+                <ul>
+                    <li>Volunteering</li>
+                    <li>Clubs and Societies</li>
+                    <li>Socializing</li>
+                </ul>
+            </div>
         </section>
 
+        <!-- contact section -->
         <h2 id="title">Contact Me</h2>
         <section class="contact">
             <form>
@@ -136,6 +220,7 @@
                 <button type="submit">Send</button>
             </form>
         </section>
+
 
         <footer>
             <h2 id="title">Fidel Shadrack</h2>
@@ -156,6 +241,15 @@
                     <a href="">
                         <i class='bx bxl-whatsapp bx-lg' ></i> 
                     </a>
+                    <a href="">
+                        <i class='bx bxl-facebook-square bx-lg'></i>
+                    </a>
+                    <a href="">
+                        <i class='bx bxl-instagram-alt bx-lg'></i>
+                    </a>
+                    <a href="">
+                        <i class='bx bxl-discord-alt bx-lg'></i>
+                    </a>
                 </div>
 
             <div class="navigation">
@@ -169,7 +263,7 @@
                 </ul>
             </div>
 
-            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+            <p>&copy; 2025 FidelShadrackPersonalPortfolio. All rights reserved.</p>
         </footer>
     </body>
 </html>

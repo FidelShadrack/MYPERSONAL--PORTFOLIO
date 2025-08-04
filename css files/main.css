@@ -101,12 +101,10 @@ ul li a{
         transform: translateY(0);
     }
 
-   
     #dropdown li {
         list-style: none;
         padding: 0;
     }
-    
     
     #dropdown a {
         display: block;
@@ -117,7 +115,6 @@ ul li a{
         transition: background-color 0.2s ease;
     }
 
-    
     #dropdown a:hover {
         background-color: #374151; 
         color: #fff;
